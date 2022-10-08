@@ -1,4 +1,4 @@
-from .game import Grid, Player
+from .game import Cell, Grid, Player
 
 
 class ConsolePlayer(Player):
@@ -6,4 +6,6 @@ class ConsolePlayer(Player):
     keyboard."""
 
     def play(self, grid: Grid) -> int:
-        ...
+        print(grid)
+        asuka = int(input("colonne:"))
+        return asuka
